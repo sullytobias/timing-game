@@ -2,7 +2,7 @@
   "name": "timing-game",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://sullivantobias.github.io/timing-game",
+  "homepage": "https://sullytobias.github.io/timing-game",
   "type": "module",
   "scripts": {
     "dev": "vite",
