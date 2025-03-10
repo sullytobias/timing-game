@@ -1,7 +1,12 @@
 export const generateRandomPosition = () => {
+    const margin = 10; 
+    
+    const safeWidth = 100 - (margin * 2);
+    const safeHeight = 100 - (margin * 2);
+    
     return {
-        x: Math.random() * 90 + 5,
-        y: Math.random() * 90 + 5,
+        x: margin + (Math.random() * safeWidth),
+        y: margin + (Math.random() * safeHeight),
     };
 };
 
