@@ -1,12 +1,14 @@
 export const generateRandomPosition = () => {
-    const margin = 10; 
+    const topBoundary = 15;
+    const bottomBoundary = 85; 
+    const sideBoundary = 10;
     
-    const safeWidth = 100 - (margin * 2);
-    const safeHeight = 100 - (margin * 2);
+    const safeWidth = 100 - (sideBoundary * 2);
+    const safeHeight = bottomBoundary - topBoundary;
     
     return {
-        x: margin + (Math.random() * safeWidth),
-        y: margin + (Math.random() * safeHeight),
+        x: sideBoundary + (Math.random() * safeWidth),
+        y: topBoundary + (Math.random() * safeHeight),
     };
 };
 

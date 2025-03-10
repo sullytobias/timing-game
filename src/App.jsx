@@ -71,7 +71,7 @@ const Game = () => {
   const averageReactionTime = calculateAverageReactionTime(reactionTimes);
 
   return (
-      <div className="flex flex-col items-center justify-center h-screen w-screen bg-gray-900 text-white overflow-hidden">
+      <div className="flex h-screen flex-col items-center justify-center h-screen w-screen bg-gray-900 text-white overflow-hidden">
           {!difficulty && (
               <DifficultyMenu onSelectDifficulty={setDifficulty} />
           )}
